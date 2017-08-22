@@ -1,0 +1,174 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Shura.SimpleCMS.Web.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <title><%=Shura.SimpleCMS.Resources.Masterpage.Title %></title>
+
+    <!-- Bootstrap -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <!-- NProgress -->
+    <link href="Content/nprogress.css" rel="stylesheet" />
+    <!-- iCheck -->
+    <link href="Content/iCheck/skins/flat/green.css" rel="stylesheet" />
+
+    <!-- bootstrap-progressbar -->
+    <link href="Content/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" />
+    <!-- JQVMap -->
+    <link href="Content/jqvmap.min.css" rel="stylesheet" />
+    <!-- bootstrap-daterangepicker -->
+    <link href="Content/daterangepicker.css" rel="stylesheet" />
+
+    <!-- Custom Theme Style -->
+    <link href="Content/custom.min.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="cphHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="nav-md">
+
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="index.aspx" class="site_title"><i class="fa fa-cog"></i><span> <%=Shura.SimpleCMS.Resources.Masterpage.Title %></span></a>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_pic">
+                            <img src="Content/Images/logo.png" alt="..." class="img-circle profile_img" />
+                        </div>
+                        <div class="profile_info">
+                            <span><%=Shura.SimpleCMS.Resources.Masterpage.Welcome %></span>
+                            <h2>Username</h2>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+
+                    <br />
+
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <h3><%=Shura.SimpleCMS.Resources.Masterpage.NavigationMenu %>></h3>
+                            <ul class="nav side-menu">
+                                <li><a><i class="fa fa-home"></i><%=Shura.SimpleCMS.Resources.Masterpage.Home %></a>
+                                </li>
+                                <li><a><i class="fa fa-list-alt"></i><%=Shura.SimpleCMS.Resources.Masterpage.Pages %></a>
+                                </li>
+                                <li><a><i class="fa fa-user"></i><%=Shura.SimpleCMS.Resources.Masterpage.Users %></a>
+                                </li>
+                                <li><a><i class="fa fa-cog"></i><%=Shura.SimpleCMS.Resources.Masterpage.ChangePassword %></a>
+                                </li>
+                                <li><a><i class="fa fa-sign-out"></i><%=Shura.SimpleCMS.Resources.Masterpage.Logout %></a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <!-- /sidebar menu -->
+
+
+                </div>
+            </div>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <nav>
+                        <div class="nav toggle">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <a href="#"><%=Shura.SimpleCMS.Resources.Masterpage.Logout %></a>
+                       
+                        
+                            </li>
+
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <asp:ContentPlaceHolder ID="cphMainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <!-- /page content -->
+
+            <!-- footer content -->
+            <footer>
+                <div class="pull-right">
+                    <a href="#"><%=Shura.SimpleCMS.Resources.Masterpage.FooterClickable %></a> - <%=Shura.SimpleCMS.Resources.Masterpage.Footer %>
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="Scripts/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="Scripts/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="Scripts/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="Scripts/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="Scripts/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="Scripts/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="Scripts/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="Scripts/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="Scripts/skycons.js"></script>
+    <!-- Flot -->
+    <script src="Scripts/jquery.flot.js"></script>
+    <script src="Scripts/jquery.flot.pie.js"></script>
+    <script src="Scripts/jquery.flot.time.js"></script>
+    <script src="Scripts/jquery.flot.stack.js"></script>
+    <script src="Scripts/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="Scripts/jquery.flot.orderBars.js"></script>
+    <script src="Scripts/jquery.flot.spline.min.js"></script>
+    <script src="Scripts/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="Scripts/date.js"></script>
+    <!-- JQVMap -->
+    <script src="Scripts/jquery.vmap.js"></script>
+    <script src="Scripts/jquery.vmap.world.js"></script>
+    <script src="Scripts/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="Scripts/moment.min.js"></script>
+    <script src="Scripts/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="Scripts/custom.min.js"></script>
+</body>
+</html>

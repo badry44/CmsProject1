@@ -1,0 +1,57 @@
+Shura Simple CMS:
+
+Controls needed:
+	--TinyMCE: https://www.nuget.org/packages/TinyMCE/ (Free)
+	--RichTextEditor: https://www.nuget.org/packages/RichTextEditor/ (Free)
+	--CuteEditor: https://www.nuget.org/packages/CuteEditor/        (licence)
+	
+
+Design
+--The design should be an admin dashboard
+	--https://www.nuget.org/packages/Gentelella
+		--more info here https://github.com/puikinsh/gentelella
+
+DB:
+
+--Lookups:
+	--PageTypes
+		--Start page
+		--Normal page
+		--Gallery page
+	--Status
+
+--Use NVARCHAR(MAX) for storing HTML.
+
+--Pages
+	--PageId
+	--PageName
+	--PageStatus
+	--PageCreationDate
+	--PageModificationDate
+	--PageCreationUser
+	--PageModificationUser
+	
+--PagesContents
+	--PgId
+	--PgPageId
+	--PgName
+	--PgStatus
+	--PgCreationDate
+	--PgModificationDate
+	--PgCreationUser
+	--PgModificationUser
+	
+--Users
+	--UsrId
+	--UsrUsername
+	--UsrPassword
+	--UsrStatus
+	
+General
+--The system should contain a method that cleans unnessary images.
+--Configuration for the system to use another users table or the current users table.
+--The system has only admins aboard.
+--No ajax is required i think.
+--The home page should view number of pages and total contents.
+--Use DEVA.
+--Prepare the scripts.

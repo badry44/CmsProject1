@@ -1,0 +1,118 @@
+Shura Simple CMS:
+================================================================================================================
+Projects needed
+--Console (DONE..)
+=======================================================================
+--Database (DONE..)
+	--Lookups:
+		--PageTypes
+			--Start page
+			--Normal page
+			--Gallery page
+		--Status
+
+	--Use NVARCHAR(MAX) for storing HTML.
+
+	--Pages
+		--[PageId]
+		--[PageName]
+		--[PageStatus]
+		--[PageType]
+		--[PageCreationDate]
+		--[PageModificationDate]
+		--[PageCreationUser]
+		--[PageModificationUser]
+		
+	--PagesContents
+		--[PgId]
+		--[PgPageId]
+		--[PgName]
+		--[PgStatus]
+		--[PgCreationDate]
+		--[PgModificationDate]
+		--[PgCreationUser]
+		--[PgModificationUser]
+		
+	--Users
+		--UsrId
+		--UsrUsername
+		--UsrPassword
+		--UsrStatus
+=======================================================================
+--DAL  (DONE..)
+	--Create lookups enums  (DONE..)
+=======================================================================
+--Logic  (DONE..)
+	--Add some useful logic  (DONE..)
+=======================================================================
+--SVN
+	--Get builds out before uploading to deva and clean everything (DONE..)
+	--Call mahmoud for SVN access(DONE..)
+=======================================================================
+--wireframes.
+		--Login. (DONE..)
+		--forgot password.  (DONE..)
+		--Master page. (DONE..)
+		--Reset password (DONE..)
+		--Users. (DONE..)
+		--User info (DONE..)
+			--Username.
+			--Email.
+			--Status.
+			--Rsest password
+		--Pages. (DONE..)
+		--Page. (DONE..)
+		--Page content. (DONE..)
+		--Home. (DONE..)
+
+--Add email to the database. (DONE..)
+	--EMail in db
+	--Email in deva.
+	
+--Add to users to the database (DONE..)
+	--last login
+	--last failed login
+
+--Resources (DONE..)
+	--Make a simple usage.		
+	
+--WEB
+	--Start web to connect the connetion string. (DONE..)
+	--Master page (DONE..)
+	--Login page (DONE..)
+	--Example pages:
+		
+		--Test page for  TinyMCE (DONE..)
+		--Right to left page.
+		--Error pages. (DONE..)
+			--Set error pages on server?  (DONE..)
+
+
+		
+
+
+================================================================================================================
+
+Controls needed:
+	--TinyMCE: https://www.nuget.org/packages/TinyMCE/ (Free)
+	--RichTextEditor: https://www.nuget.org/packages/RichTextEditor/ (Free)
+	--CuteEditor: https://www.nuget.org/packages/CuteEditor/        (licence)
+	--Design
+		--The design should be an admin dashboard
+			--Gentelella https://github.com/puikinsh/gentelella/releases
+				
+
+================================================================================================================
+
+	
+General
+--The system should contain a method that cleans unnessary images.
+--Configuration for the system to use another users table or the current users table.
+--The system has only admins aboard.
+--No ajax is required i think.
+--The home page should view number of pages and total contents.
+--Use DEVA. (DONE..)
+--Prepare the scripts. (DONE..)
+
+--Gentela will support rtl in the future stay tuned
+--Add to tinymce the all support in the web site except the paid ones.

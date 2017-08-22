@@ -1,0 +1,19 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="TinymceTest.aspx.cs" Inherits="Shura.SimpleCMS.Web.TinymceTest" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="server">
+    <script src="Scripts/tinymce/tinymce.min.js"></script>
+    <script>tinymce.init({ selector: '#conTiny' });</script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphMainContent" runat="server">
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="row x_title">
+                <div class="col-md-6">
+                </div>
+                
+                <textarea id="conTiny">Test</textarea>
+            </div>
+        </div>
+    </div>
+</asp:Content>
